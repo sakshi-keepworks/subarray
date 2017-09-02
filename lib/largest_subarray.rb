@@ -13,14 +13,6 @@ class ContiguousSubarray
       max_ending_here = [max_ending_here + element, 0].max
       max_so_far = [max_ending_here, max_so_far].max
     end
-    puts "Sum: #{max_so_far}"
+    return "Sum: #{max_so_far}"
   end
 end
-
-csa = ContiguousSubarray.new
-input = " "
-while !input.empty?
-  input = gets.chomp.split().map { |e| e.to_i }
-  csa.raw_array.push input
-end
-csa.largest_contiguous_subarray_sum
