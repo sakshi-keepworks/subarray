@@ -1,4 +1,4 @@
-require './lib/max_contiguous_subarray'
+require './lib/largest_subarray'
 
 csa = ContiguousSubarray.new
 input = " "
